@@ -5,7 +5,7 @@ import myimg from "../images/menu.png"
 function Navbar() {
   return (
     <div className="nav_box">
-        <div className="m" >
+        <div className="box" >
             <img src={myimg}  />
         </div>
      
