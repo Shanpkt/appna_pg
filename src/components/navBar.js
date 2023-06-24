@@ -11,7 +11,7 @@ function Navbar() {
         </div>
         <div className="input_box" >
         <input placeholder="type area" />
-        <button>click</button>
+        <button></button>
         </div>
     </div>
   )
