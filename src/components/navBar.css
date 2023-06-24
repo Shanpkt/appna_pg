@@ -31,6 +31,8 @@
     border: 2px solid red;
     position: absolute;
     margin-top: 82px;
+    justify-content: center;
+    display: flex;
 }
 
 .input_box input{
