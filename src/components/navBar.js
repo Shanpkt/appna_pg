@@ -12,7 +12,7 @@ function Navbar() {
         </div>
         <div className="input_box" >
         <input placeholder="type area" />
-        <button><img src={search} /></button>
+        <button><img className="search" src={search} /></button>
         </div>
     </div>
   )
