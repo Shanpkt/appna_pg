@@ -2,12 +2,14 @@
 import './navBar.css'
 import myimg from "../images/menu.png"
 import search from "../images/search.png"
+import filter from "../images/filter.png"
 
 function Navbar() {
   return (
     <div className="nav_box">
         <div className="box" >
             <img src={myimg}  />
+            <img src={filter}  />
            
         </div>
         <div className="input_box" >
