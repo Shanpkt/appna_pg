@@ -11,6 +11,7 @@
     margin-top: -35px;
     background: linear-gradient(10deg, #26E7D3, #60FF48);
     padding-bottom: 25px;
+    position: sticky;
 }
 
 .box{
