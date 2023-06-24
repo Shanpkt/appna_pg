@@ -7,8 +7,14 @@ function App() {
     <div className="App">
      <Navbar/>
      <Citybox/>
+     <Citybox/>
+     <Citybox/>
+     <Citybox/>
+     <Citybox/>
+     <Citybox/>
     </div>
   );
 }
+
 
 export default App;
