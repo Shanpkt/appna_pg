@@ -1,6 +1,7 @@
 
 import './navBar.css'
 import myimg from "../images/menu.png"
+import search from "../images/search.png"
 
 function Navbar() {
   return (
@@ -11,7 +12,7 @@ function Navbar() {
         </div>
         <div className="input_box" >
         <input placeholder="type area" />
-        <button></button>
+        <button><img src={search} /></button>
         </div>
     </div>
   )
