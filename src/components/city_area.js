@@ -1,6 +1,7 @@
 
 import "./city_area.css"
 import unisex from "../images/unisex.png"
+import room from "../images/room.jpg"
 
 
 function Citybox() {
@@ -15,11 +16,15 @@ function Citybox() {
               <h5><img src={unisex}/>unisex</h5>
               <h5><img src={unisex}/>unisex</h5>
             </div>
+            <div className="innner_img_box">
+              <img src={room} />
+            </div>
           </div>
-  
- 
 
+
+          
         </div>
+      
         
        
     </div>

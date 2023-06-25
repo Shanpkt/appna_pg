@@ -20,6 +20,7 @@
 .inner_box_first{
     border: 2px solid red;
     width: 100%;
+    display: flex;
 }
 
 .inner_box_second{
@@ -36,4 +37,15 @@
     justify-content: flex-start;
     border: 2px solid green;
     margin: 0;
+}
+
+.innner_img_box{
+    width: 50%;
+    border: 2px solid blue;
+   
+}
+
+
+.innner_img_box img{
+    width: 100%;
 }
