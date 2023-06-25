@@ -15,8 +15,8 @@ function Citybox() {
             <div className="inner_box_second" >
 
               <h5><img src={unisex}/>unisex</h5>
-              <h5><img src={unisex}/>unisex</h5>
-              <h5><img src={unisex}/>unisex</h5>
+              <h5><img src={unisex}/>Food</h5>
+              <h5><img src={unisex}/>1/2/3</h5>
             </div>
             <div className="innner_img_box">
               <img src={room} />
