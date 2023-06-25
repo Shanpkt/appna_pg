@@ -1,0 +1,11 @@
+.panel_box{
+
+ width: 100%;
+ border: 2px solid blue;
+ height: 54px;
+ display: flex;
+ justify-content: space-between;
+ position: fixed;
+ bottom: 0;
+
+}
