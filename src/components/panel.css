@@ -1,11 +1,28 @@
 .panel_box{
 
  width: 100%;
- border: 2px solid blue;
+ box-shadow: 1px 1px 10px #cbc5c5; 
  height: 54px;
  display: flex;
  justify-content: space-between;
  position: fixed;
  bottom: 0;
 
+}
+
+.panel_box img{
+    margin: 0 20px 0 20px;
+    height: 100%;
+}
+.panel_box div img{
+    height: 70%;
+}
+
+.panel_box div{
+
+ margin-top: -40px;
+}
+
+.panel_box div h4{
+    margin: 0;
 }
