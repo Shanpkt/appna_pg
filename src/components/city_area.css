@@ -65,3 +65,20 @@
     display: flex;
     margin: 0;
 }
+
+.info_box_rec{
+    width: 100%;
+    border: 2px solid purple;
+    display: flex;
+}
+.info_box_rec h4{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    height: 25px;
+}
+
+.info_box_rec h4 img{
+    height: 100%;
+}
+

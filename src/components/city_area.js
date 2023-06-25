@@ -3,6 +3,7 @@ import "./city_area.css"
 import unisex from "../images/unisex.png"
 import room from "../images/room.jpg"
 import location from "../images/location.png"
+import like from "../images/like.png"
 
 
 function Citybox() {
@@ -24,6 +25,11 @@ function Citybox() {
           <div className="info_box">
             <div className="info_box_cir">
               <h5><img src={location} />laxmi chowk</h5>
+            </div>
+            <div className="info_box_rec">
+              <h4>Bhrma PG</h4>
+              <h4>7000/-</h4>
+              <h4><img src={like} /></h4>
             </div>
           </div>
 
