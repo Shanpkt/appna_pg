@@ -21,6 +21,10 @@ function App() {
      <Navbar  trriger={trriger}  settrigger={settrigger}   />
      <Citybox/>
      <Citybox/>
+     <Citybox/>
+     <Citybox/>
+     <Citybox/>
+     <Citybox/>
      <Panel/>
     </div>
   );
