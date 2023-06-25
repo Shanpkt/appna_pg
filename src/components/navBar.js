@@ -4,11 +4,20 @@ import myimg from "../images/menu.png"
 import search from "../images/search.png"
 import filter from "../images/filter.png"
 
-function Navbar() {
+function Navbar({trriger,settrigger}) {
+
+
+  function hope(){
+    console.log (trriger)
+    trriger==false?settrigger(true):settrigger(false)
+   
+  }
+
+
   return (
     <div className="nav_box">
         <div className="box" >
-            <img src={myimg}  />
+            <img onClick={hope}  src={myimg}  />
             <img src={filter}  />
            
         </div>
