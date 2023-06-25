@@ -20,6 +20,21 @@
    height: 0;
    position: absolute;
    visibility: hidden;
+   transition: 0.1s;
   
    
+}
+
+.close_icon{
+    display: flex;
+    justify-content: end;
+    border: 2px solid red;
+    /* margin: 41px; */
+    margin-top: 38px;
+}
+
+
+.close_icon img{
+    width: 30px;
+    height: 30px;
 }

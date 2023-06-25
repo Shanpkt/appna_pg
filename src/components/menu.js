@@ -11,7 +11,7 @@ function Menu({trriger,settrigger}) {
 
   return (
     <div  className={`menu_box ${trriger==true ? 'menu_box1' : ''}`} >
-        <div onClick={handle_close} ><img src={close}/></div>
+        <div className='close_icon' onClick={handle_close} ><img src={close}/></div>
 
     </div>
   )
