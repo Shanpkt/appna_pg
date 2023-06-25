@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       
-      <Menu props={trriger}/>
+      <Menu trriger={trriger}  settrigger={settrigger}/>
      <Navbar  trriger={trriger}  settrigger={settrigger}   />
    
      <Citybox/>
