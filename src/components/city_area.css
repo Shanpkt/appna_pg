@@ -49,3 +49,19 @@
 .innner_img_box img{
     width: 100%;
 }
+
+.info_box{
+    width: 100%;
+    border: 2px solid gray;
+}
+
+.info_box_cir{
+    border: 2px solid green;
+}
+
+.info_box_cir h5{
+    height: 16px;
+    border: 2px solid red;
+    display: flex;
+    margin: 0;
+}
