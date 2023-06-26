@@ -5,27 +5,16 @@ import Citybox from './components/city_area';
 import Menu from './components/menu';
 import { useState } from 'react';
 import Panel from './components/panel';
+import BigScreenimg from './components/bigScreenimg';
+import PgInfo from './components/pgInfo';
+import Selecepg from './molecules/selecepg';
 function App() {
-  const [trriger,settrigger]=useState(true)
-  console.log(trriger)
-
-  function hope(){
  
-    trriger==false?settrigger(true):settrigger(false)
-   
-  }
   return (
     <div className="App">
       
-      <Menu trriger={trriger}  settrigger={settrigger}/>
-     <Navbar  trriger={trriger}  settrigger={settrigger}   />
-     <Citybox/>
-     <Citybox/>
-     <Citybox/>
-     <Citybox/>
-     <Citybox/>
-     <Citybox/>
-     <Panel/>
+    <Selecepg/>
+     
     </div>
   );
 }
