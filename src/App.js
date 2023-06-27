@@ -9,6 +9,7 @@ import BigScreenimg from './components/bigScreenimg';
 import PgInfo from './components/pgInfo';
 import Selecepg from './molecules/selecepg';
 import { Routes ,Route} from 'react-router-dom';
+import Mainpage from './molecules/mainpage';
 function App() {
  
   return (
@@ -17,7 +18,7 @@ function App() {
     {/* <Selecepg/> */}
     {/* <BigScreenimg/> */}
     <Routes>
-      <Route path='/' element={<Selecepg/>} />
+      <Route path='/' element={<Mainpage/>} />
       <Route path='/PGselect' element={<BigScreenimg/>} />
     </Routes>
      
