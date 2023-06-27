@@ -8,3 +8,40 @@
     border-radius: 40px;
 
 }
+
+.info_main_box{
+    border: 2px solid red;
+    display: flex;
+    
+}
+
+
+.info_one{
+    border: 2px solid black;
+    flex-grow: 3;
+}
+
+.info_one h5{
+    height: 20px;
+    border: 2px solid red;
+    align-items: center;
+    display: flex;
+    
+}
+
+.info_one h3{
+    height: 20px;
+    border: 2px solid rgb(26, 213, 51);
+    align-items: center;
+    display: flex;
+    
+}
+
+.info_one img{
+    height: 100%;
+}
+
+.info_two{
+    border: 2px solid green;
+    flex-grow: 1;
+}
