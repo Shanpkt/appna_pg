@@ -10,31 +10,34 @@
 }
 
 .info_main_box{
-    border: 2px solid red;
+
     display: flex;
+    padding-top: 20px;
     
 }
 
 
 .info_one{
-    border: 2px solid black;
+   
     flex-grow: 3;
+    padding-left: 20px;
 }
 
 .info_one h5{
     height: 20px;
-    border: 2px solid red;
+  
     align-items: center;
     display: flex;
+    margin-top: 0px;
     
 }
 
 .info_one h3{
     height: 20px;
-    border: 2px solid rgb(26, 213, 51);
+  
     align-items: center;
     display: flex;
-    
+    margin-bottom: 0px;
 }
 
 .info_one img{
@@ -42,6 +45,15 @@
 }
 
 .info_two{
-    border: 2px solid green;
+  
     flex-grow: 1;
+}
+
+.info_two h5{
+    
+    
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 0 10px 0 10px;
 }
