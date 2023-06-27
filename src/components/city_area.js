@@ -8,9 +8,10 @@ import food from "../images/food.png"
 import bed from "../images/bed.png"
 
 
-function Citybox() {
+function Citybox({navigation}) {
+
   return (
-    <div className="city_box">
+    <div onClick={navigation} className="city_box">
         <div className="inner_box" >
           
           <div className="inner_box_first" >

@@ -18,6 +18,12 @@ function PgInfo() {
 
      </div>
 
+
+     <div className='info_second_box'>
+      <h4>Property Amenties</h4>
+
+     </div>
+
     </div>
 
   )

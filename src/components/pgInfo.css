@@ -57,3 +57,9 @@
     width: fit-content;
     padding: 0 10px 0 10px;
 }
+
+
+
+.info_second_box{
+    border: 2px solid black;
+}
