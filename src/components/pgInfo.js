@@ -1,6 +1,7 @@
 import React from 'react'
 import "./pgInfo.css"
 import location from "../images/location.png"
+import washing from "../images/icons8-washing-machine-80.png"
 
 function PgInfo() {
   return (
@@ -19,8 +20,16 @@ function PgInfo() {
      </div>
 
 
-     <div className='info_second_box'>
+     <div  className='info_second_box'>
       <h4>Property Amenties</h4>
+      <div>
+        <img className='amenties_pic' src={washing}  />
+        <img className='amenties_pic' src={washing}  />
+        <img className='amenties_pic' src={washing}  />
+        <img className='amenties_pic' src={washing}  />
+        <img className='amenties_pic' src={washing}  />
+        <img className='amenties_pic' src={washing}  />
+      </div>
 
      </div>
 

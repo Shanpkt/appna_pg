@@ -27,7 +27,7 @@ function Selecepg() {
      <Navbar  trriger={trriger}  settrigger={settrigger} filtertrg={filtertrg} setfiltertrg={setfiltertrg}   />
      <Filteropt filtertrg={filtertrg} setfiltertrg={setfiltertrg} />
      <Citybox navigation={handel}/>
-     <Citybox/>
+     <Citybox navigation={handel}  />
      <Citybox/>
      <Citybox/>
      <Citybox/>

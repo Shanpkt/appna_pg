@@ -63,3 +63,16 @@
 .info_second_box{
     border: 2px solid black;
 }
+
+.info_second_box h4{
+    display: flex;
+    margin-left: 10px
+}
+
+
+
+.amenties_pic{
+    width: 29px;
+    height: 29px !important;
+    margin: 10px;
+}
