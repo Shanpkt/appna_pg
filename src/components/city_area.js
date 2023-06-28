@@ -6,9 +6,12 @@ import location from "../images/location.png"
 import like from "../images/like.png"
 import food from "../images/food.png"
 import bed from "../images/bed.png"
+import { useNavigate } from "react-router-dom"
 
 
 function Citybox({navigation}) {
+
+  
 
   return (
     <div onClick={navigation} className="city_box">

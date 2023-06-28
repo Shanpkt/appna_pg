@@ -18,7 +18,7 @@ function Selecepg() {
 
     function handel(){
       console.log("hello")
-    navigation('/PGselect')
+    navigation('/PGdetail')
     }
 
   return (<>

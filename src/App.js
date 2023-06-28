@@ -19,7 +19,8 @@ function App() {
     {/* <BigScreenimg/> */}
     <Routes>
       <Route path='/' element={<Mainpage/>} />
-      <Route path='/PGselect' element={<BigScreenimg/>} />
+      <Route path='/PGselect' element={<Selecepg/>} />
+      <Route path='/PGdetail' element={<BigScreenimg/>} />
     </Routes>
      
     </div>
