@@ -8,7 +8,7 @@ function Mainpage() {
     const navigate=useNavigate()
 
     function handel(){
-  navigate("/PGselect")
+  navigate("/login")
     }
 
   return (

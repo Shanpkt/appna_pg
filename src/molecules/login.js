@@ -13,7 +13,7 @@ function Login() {
                 <input placeholder='Email' />
                 <input placeholder='Password' />
             </div>
-            <h4>dont have Account?Signup</h4>
+            <h6>dont have Account?<span> Signup</span></h6>
         </div>
         </div>
         <img className='google_but' src={google} />
