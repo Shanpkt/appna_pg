@@ -10,7 +10,7 @@ function PgInfo() {
     
  <div className='info_one'>
  <h3>Bhrama Pg</h3>
-   <h5><img src={location} /><a>Laxmi Chowk</a></h5> 
+   <h5><a>Laxmi Chowk</a><img src={location} /></h5> 
      </div>
      <div className='info_two'>
       <h5>UNISEX</h5>
