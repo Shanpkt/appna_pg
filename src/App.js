@@ -10,26 +10,37 @@ import PgInfo from './components/pgInfo';
 import Selecepg from './molecules/selecepg';
 import { Routes ,Route} from 'react-router-dom';
 import Mainpage from './molecules/mainpage';
-import axios from 'axios';
+import { auth,provider } from './config';
+import {signInWithPopup} from "firebase/auth"
+import Login from './molecules/login';
+
+
+
 const opencage = require('opencage-api-client');
 function App() {
 
- 
   
+    
+function handelclick(){
+
+   signInWithPopup(auth,provider).then((e)=>{
+ 
+     console.log(e)
+
+   })
+
+}
+ 
   return (
      <div className="App">
-    {/* //   <h3>{data.country}</h3> 
-    // <h3>state-{data.state}</h3>
-    //   <h3>dist.-{data.state_district}</h3>
-    //   <h3>suburb-{data.suburb}</h3> */}
-
-    {/* <Selecepg/> */}
-    {/* <BigScreenimg/> */}
-     <Routes>
+      {/* <button onClick={handelclick}>Log In</button> */}
+     {/* <Routes>
       <Route path='/' element={<Mainpage/>} />
       <Route path='/PGselect' element={<Selecepg/>} />
       <Route path='/PGdetail' element={<BigScreenimg/>} />
-    </Routes> 
+    </Routes>  */}
+
+    <Login/>
      
     </div>
   );

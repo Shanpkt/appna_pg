@@ -1,0 +1,29 @@
+.login_main{
+    height: 100vh;
+    width: 100%;
+    background-color: #36D18D;
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+    align-items: center;
+}
+
+.login_box{
+    border: 2px solid black;
+
+}
+
+.login_details_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.white_curtain{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    padding-bottom: 20%;
+    border-radius: 0 0 70px 70px;
+    padding-top: 30%;
+}
