@@ -22,7 +22,7 @@ function PgInfo() {
 
      <div  className='info_second_box'>
       <h4>Property Amenties</h4>
-      <div>
+      <div className='amenties_box'>
         <img className='amenties_pic' src={washing}  />
         <img className='amenties_pic' src={washing}  />
         <img className='amenties_pic' src={washing}  />

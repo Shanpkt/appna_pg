@@ -70,9 +70,16 @@
 }
 
 
+.amenties_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+
 
 .amenties_pic{
     width: 29px;
     height: 29px !important;
-    margin: 10px;
+    margin: 0 20px 10px 10px;
 }
