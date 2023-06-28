@@ -1,6 +1,7 @@
 import React from 'react'
 import "./login.css"
 import loginWomen from "../images/loginWomen.png"
+import google from "../images/icons8-google-100.png"
 
 function Login() {
   return (
@@ -12,8 +13,10 @@ function Login() {
                 <input placeholder='Email' />
                 <input placeholder='Password' />
             </div>
+            <h4>dont have Account?Signup</h4>
         </div>
         </div>
+        <img className='google_but' src={google} />
 
     </div>
   )
