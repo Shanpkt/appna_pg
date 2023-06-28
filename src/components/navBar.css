@@ -64,7 +64,7 @@
 .menu_box_loc{
     display: flex;
 }
-.menu_box_loc h5{
-    margin: 0;
+.menu_box_loc h4{
+    margin: 10px 0 0 0;
     color: white;
 }

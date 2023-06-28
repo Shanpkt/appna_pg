@@ -59,7 +59,7 @@ function Navbar({trriger,settrigger,filtertrg,setfiltertrg}) {
         <div className="box" >
           <div className='menu_box_loc'>
             <img onClick={hope}  src={myimg}  />
-           <h5>{data.state_district}</h5></div>
+           <h4>{data.state_district}</h4></div>
             <img onClick={filterset} src={filter}  />
            
         </div>
