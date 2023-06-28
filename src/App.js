@@ -15,6 +15,7 @@ const opencage = require('opencage-api-client');
 function App() {
 
   const [data,setdata]=useState([])
+  const [cords,setcords]=useState("")
 
   useEffect(() => {
     findlocation()
@@ -24,14 +25,20 @@ function App() {
  
  async function findlocation(){
 
-  navigator.geolocation.getCurrentPosition((position)=>{
-    console.log(position)
+    navigator.geolocation.getCurrentPosition((position)=>{
+   // console.log(position.coords);
+ fet(position.coords)
 
-  })
+    })
+
+  }
+
+
+ async function fet(e){
 
     const response = await axios.get(
-      `https://api.opencagedata.com/geocode/v1/json?key=e866f37a27334a859dd083191709fd6f&q=${18.6010879}+${
-        73.732113}`
+      `https://api.opencagedata.com/geocode/v1/json?key=e866f37a27334a859dd083191709fd6f&q=${e.latitude}+${
+        e.longitude}`
     ).then((e)=>{console.log(e.data.results[0].components);setdata(e.data.results[0].components)
       })
 
@@ -44,7 +51,6 @@ function App() {
       <h3>dist.-{data.state_district}</h3>
       <h3>suburb-{data.suburb}</h3>
 
-      
     {/* <Selecepg/> */}
     {/* <BigScreenimg/> */}
     {/* <Routes>
