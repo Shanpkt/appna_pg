@@ -3,6 +3,7 @@ import './navBar.css'
 import myimg from "../images/menu.png"
 import search from "../images/search.png"
 import filter from "../images/filter.png"
+import location from "../images/icons8-location-64.png"
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -59,7 +60,7 @@ function Navbar({trriger,settrigger,filtertrg,setfiltertrg}) {
         <div className="box" >
           <div className='menu_box_loc'>
             <img onClick={hope}  src={myimg}  />
-           <h4>{data.state_district}</h4></div>
+           <h4>{data.state_district}<img className='location_icon' src={location} /></h4></div>
             <img onClick={filterset} src={filter}  />
            
         </div>
