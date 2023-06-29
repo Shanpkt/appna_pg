@@ -20,13 +20,15 @@ import Signup from './molecules/signup';
 const opencage = require('opencage-api-client');
 function App() {
 
+  const [data,setdata]=useState(0)
+
   
     
 function handelclick(){
 
    signInWithPopup(auth,provider).then((e)=>{
  
-     console.log(e)
+     setdata(e.user.email)
 
    })
 
@@ -34,7 +36,9 @@ function handelclick(){
  
   return (
      <div className="App">
+
       <button onClick={handelclick}>Log In</button>
+      <h2>{data}</h2>
      <Routes>
    
       <Route path='/' element={<Mainpage/>} />
