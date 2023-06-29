@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import "./signup.css"
 import plane from "../images/quirky-paper-plane-with-dotted-line-1.png"
+import axios from 'axios'
 
 function Signup() {
 
@@ -54,6 +55,7 @@ function confirm_pass(e){
 function submit(){
     if(waring ==true && waring2==true){
         console.log("ok")
+        axios.post("http://localhost:4004/userdata",data)
 
     }
     

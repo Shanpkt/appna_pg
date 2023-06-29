@@ -31,11 +31,9 @@
     margin-bottom: 10px;
     border-bottom:2px solid #36D18D ;
     height: 28px;
-    pointer-events: none;
+   
 }
-.feild_box >input:focus {
-    outline: none;
-  }
+
 
 
 

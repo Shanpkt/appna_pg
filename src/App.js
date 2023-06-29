@@ -22,23 +22,24 @@ function App() {
 
   const [data,setdata]=useState(0)
 
+  useEffect(() => {
+   
+  }, [])
   
     
 function handelclick(){
-
-   signInWithPopup(auth,provider).then((e)=>{
+  signInWithPopup(auth,provider).then((e)=>{
  
-     setdata(e.user.email)
+    setdata(e.user.email)
 
-   })
+  })
+  
 
 }
  
   return (
      <div className="App">
 
-      <button onClick={handelclick}>Log In</button>
-      <h2>{data}</h2>
      <Routes>
    
       <Route path='/' element={<Mainpage/>} />
@@ -58,3 +59,6 @@ function handelclick(){
 
 
 export default App;
+
+
+
