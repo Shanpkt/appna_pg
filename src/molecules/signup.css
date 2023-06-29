@@ -31,13 +31,18 @@
     margin-bottom: 10px;
     border-bottom:2px solid #36D18D ;
     height: 28px;
+    pointer-events: none;
 }
+.feild_box >input:focus {
+    outline: none;
+  }
+
 
 
 .feild_box input:nth-child(5){
   
     
-     margin-top: 10px;
+     margin-top: 6px;
 }
 
 .feild_box :nth-child(6){
@@ -46,7 +51,7 @@
     margin: 0;
 }
 .feild_box :nth-child(7){
-    margin-top: 13px;
+    margin-top: 0px;
 
 }
 
@@ -62,7 +67,7 @@
 
 .feild_box :nth-child(9){
     color: white;
-    font-size: 17px;
+    font-size: 27px;
     margin: 0;
     height: 50px;
     background-color: #36D18D;

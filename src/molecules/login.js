@@ -23,6 +23,10 @@ function handel(){
     navigate("/PGselect")
 }
 
+function signupredirect(){
+  navigate("/login/signup")
+}
+
 console.log(infodata)
 
   return (
@@ -35,7 +39,7 @@ console.log(infodata)
                 <input onChange={login} name='Password' placeholder='Password' />
                 <button onClick={handel} className='login_button' >Login</button>
             </div>
-            <h6>dont have Account?<span> Signup</span></h6>
+            <h6>dont have Account?<span onClick={signupredirect} > Signup</span></h6>
         </div>
         </div>
         <img className='google_but' src={google} />
