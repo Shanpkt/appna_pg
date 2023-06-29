@@ -54,7 +54,7 @@ function confirm_pass(e){
 function submit(){
     if(waring ==true && waring2==true){
         console.log("ok")
-        
+
     }
     
 }
@@ -63,6 +63,7 @@ console.log(data)
     <div className='signup_main' >
         <div className='signup_box' >
             <img src={plane} />
+            <h2>HELLO , GET JOIN WITH US</h2>
             <div className='feild_box'>
                 <input onChange={setalldata} name='first_name'   placeholder='First Name'/>
                 <input onChange={setalldata} name='last_name' placeholder='Last Name'/>
