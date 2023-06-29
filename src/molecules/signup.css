@@ -29,7 +29,7 @@
 .feild_box > input{
     border: none;
     margin-bottom: 10px;
-    border-bottom:2px solid green ;
+    border-bottom:2px solid #36D18D ;
     height: 28px;
 }
 
@@ -64,8 +64,9 @@
     color: white;
     font-size: 17px;
     margin: 0;
-    height: 25px;
-    background-color: green;
+    height: 50px;
+    background-color: #36D18D;
     border: none;
     margin-top: 20px;
+    border-radius: 42px;
 }
