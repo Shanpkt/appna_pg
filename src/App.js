@@ -13,6 +13,7 @@ import Mainpage from './molecules/mainpage';
 import { auth,provider } from './config';
 import {signInWithPopup} from "firebase/auth"
 import Login from './molecules/login';
+import Signup from './molecules/signup';
 
 
 
@@ -34,13 +35,15 @@ function handelclick(){
   return (
      <div className="App">
       {/* <button onClick={handelclick}>Log In</button> */}
-     <Routes>
+     {/* <Routes>
    
       <Route path='/' element={<Mainpage/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/PGselect' element={<Selecepg/>} />
       <Route path='/PGdetail' element={<BigScreenimg/>} />
-    </Routes> 
+    </Routes>  */}
+
+    <Signup/>
 
    
      
