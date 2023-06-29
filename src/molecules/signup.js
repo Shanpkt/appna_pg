@@ -4,8 +4,8 @@ import plane from "../images/quirky-paper-plane-with-dotted-line-1.png"
 
 function Signup() {
 
-    const [waring,setwarning]=useState(false)
-    const [waring2,setwarning2]=useState(false)
+    const [waring,setwarning]=useState(true)
+    const [waring2,setwarning2]=useState(true)
     const [data,setdata]=useState({})
 
     let password_data=useRef({password:"",confirm_pass:""})
