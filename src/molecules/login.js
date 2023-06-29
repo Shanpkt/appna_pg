@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./login.css"
 import loginWomen from "../images/loginWomen.png"
 import google from "../images/icons8-google-100.png"
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
 const [infodata,setinfodata]=useState()
@@ -16,6 +17,12 @@ const {name,value}=e.target
   })
 }
 
+const navigate=useNavigate()
+
+function handel(){
+    navigate("/PGselect")
+}
+
 console.log(infodata)
 
   return (
@@ -26,7 +33,7 @@ console.log(infodata)
             <div className='login_details_input'>
                 <input onChange={login} name='Email' placeholder='Email' />
                 <input onChange={login} name='Password' placeholder='Password' />
-                <button className='login_button' >Login</button>
+                <button onClick={handel} className='login_button' >Login</button>
             </div>
             <h6>dont have Account?<span> Signup</span></h6>
         </div>
