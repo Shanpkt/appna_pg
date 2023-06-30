@@ -43,10 +43,7 @@ function confirm_pass(e){
     if(value==data.password){
        
      setwarning2(true)
-    setdata({
-        ...data,
-        [name]:value
-       })
+   
     }else{
         setwarning2(false)
     }
@@ -55,22 +52,24 @@ function confirm_pass(e){
 function submit(){
     if(waring ==true && waring2==true){
         console.log("ok")
-        axios.post("http://localhost:4004/userdata",data)
+        axios.post("https://backend-appna-pg.vercel.app/userdata",data).then((e)=>{console.log(e)})
 
     }
     
 }
+
 console.log(data)
+
   return (
     <div className='signup_main' >
         <div className='signup_box' >
             <img src={plane} />
             <h2>HELLO , GET JOIN WITH US</h2>
             <div className='feild_box'>
-                <input onChange={setalldata} name='first_name'   placeholder='First Name'/>
-                <input onChange={setalldata} name='last_name' placeholder='Last Name'/>
-                <input onInput={setalldata} onChange={setalldata} name='email' placeholder='Email' />
-                <input onChange={setalldata} name='year' placeholder='Birth Year' />
+                <input onChange={setalldata} name='First_name'   placeholder='First Name'/>
+                <input onChange={setalldata} name='Last_name' placeholder='Last Name'/>
+                <input onInput={setalldata} onChange={setalldata} name='Email' placeholder='Email' />
+                <input onChange={setalldata} name='year' placeholder='Year' />
                 <input name='password'  onChange={password}  placeholder='Password' />
                 <h6 className={`pass_warning ${waring?"password_ok":""}` } >password should be min of 8 length and 1 Number</h6>
                 <input onChange={confirm_pass} name='confirm_pass' placeholder='Confirm Paasword'/>
