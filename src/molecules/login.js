@@ -9,7 +9,6 @@ import axios from 'axios'
 function Login() {
 const [infodata,setinfodata]=useState()
 const [data,setdata]=useState(0)
-
 function login(e){
 const {name,value}=e.target
   
@@ -22,7 +21,13 @@ const {name,value}=e.target
 const navigate=useNavigate()
 
 function handel(){
-    navigate("/PGselect")
+    axios.get(`http://localhost:1212/userdata/${infodata.Email}`).then((e)=>{
+      if(e.data.status==400){
+        localStorage.setItem("logindetails",JSON.stringify(e.data.data))
+        console.log(e.data)
+        navigate("/PGselect")
+      }
+    })
 }
 
 function signupredirect(){
@@ -55,6 +60,7 @@ console.log(infodata)
         <div className='login_box' >
             <img src={loginWomen} />
             <div className='login_details_input'>
+            <h5>Sorry your ID and Password is incorrect</h5>
                 <input onChange={login} name='Email' placeholder='Email' />
                 <input onChange={login} name='Password' placeholder='Password' />
                 <button onClick={handel} className='login_button' >Login</button>
