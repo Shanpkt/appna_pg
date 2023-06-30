@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import "./login.css"
 import loginWomen from "../images/loginWomen.png"
 import google from "../images/icons8-google-100.png"
-import { useNavigate } from 'react-router-dom'
+import { json, useNavigate } from 'react-router-dom'
 import {signInWithPopup} from "firebase/auth"
 import { auth,provider } from '../config';
+import axios from 'axios'
 function Login() {
 const [infodata,setinfodata]=useState()
 const [data,setdata]=useState(0)
@@ -28,10 +29,16 @@ function signupredirect(){
   navigate("/login/signup")
 }
 
-function handelclick(){
+  function handelclick(){
   signInWithPopup(auth,provider).then((e)=>{
  
-    setdata(e.user.email)
+  //  setdata(e.user.email)
+  axios.get(`http://localhost:1212/userdata/${e.user.email}`).then((e)=>{
+    if(e.data.status){
+      localStorage.setItem("logindetails",JSON.stringify(e.data.data))
+      navigate("/PGselect")
+    }
+  })
 
   })
   
@@ -44,7 +51,6 @@ console.log(infodata)
    
     <div className='login_main'>
      
-    <h2>{data}</h2>
         <div className='white_curtain'>
         <div className='login_box' >
             <img src={loginWomen} />

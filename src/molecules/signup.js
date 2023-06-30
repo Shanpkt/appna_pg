@@ -40,7 +40,7 @@ function password(e){
 }
 function confirm_pass(e){
     const {value,name}=e.target
-    if(value==data.password){
+    if(value==data.Password){
        
      setwarning2(true)
    
@@ -52,7 +52,7 @@ function confirm_pass(e){
 function submit(){
     if(waring ==true && waring2==true){
         console.log("ok")
-        axios.post("https://backend-appna-pg.vercel.app/userdata",data).then((e)=>{console.log(e)})
+        axios.post("http://localhost:1212/userdata",data).then((e)=>{console.log(e)})
 
     }
     
@@ -69,8 +69,8 @@ console.log(data)
                 <input onChange={setalldata} name='First_name'   placeholder='First Name'/>
                 <input onChange={setalldata} name='Last_name' placeholder='Last Name'/>
                 <input onInput={setalldata} onChange={setalldata} name='Email' placeholder='Email' />
-                <input onChange={setalldata} name='year' placeholder='Year' />
-                <input name='password'  onChange={password}  placeholder='Password' />
+                <input onChange={setalldata} name='Year' placeholder='Year' />
+                <input name='Password'  onChange={password}  placeholder='Password' />
                 <h6 className={`pass_warning ${waring?"password_ok":""}` } >password should be min of 8 length and 1 Number</h6>
                 <input onChange={confirm_pass} name='confirm_pass' placeholder='Confirm Paasword'/>
                 <h6  onChange={confirm_pass}  className={`pass_warning ${waring2?"password_ok":""}` }  >password is not matching</h6>
