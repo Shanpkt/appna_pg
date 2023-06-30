@@ -66,7 +66,7 @@ console.log(data)
             <img src={plane} />
             <h2>HELLO , GET JOIN WITH US</h2>
             <div className='feild_box'>
-                <h5>Sorry your ID and Password is incorrect</h5>
+               
                 <input onChange={setalldata} name='First_name'   placeholder='First Name'/>
                 <input onChange={setalldata} name='Last_name' placeholder='Last Name'/>
                 <input onInput={setalldata} onChange={setalldata} name='Email' placeholder='Email' />
