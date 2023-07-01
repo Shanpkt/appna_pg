@@ -1,5 +1,5 @@
 .main{
-    background: linear-gradient(10deg, #1bedd8, #99f58b);
+    background: linear-gradient(323deg, #228fec, #00e99c); /*// // #1bedd8, #99f58b*/
     background-color: #60FF48;
     width: 100%;
     height: 100%;
@@ -8,7 +8,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    justify-content: center;
     
+}
+
+.main :nth-child(4){
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
 .laptopman{

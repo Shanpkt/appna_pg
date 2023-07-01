@@ -2,12 +2,16 @@ import React, { useRef, useState } from 'react'
 import "./signup.css"
 import plane from "../images/quirky-paper-plane-with-dotted-line-1.png"
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom'
 
 function Signup() {
 
     const [waring,setwarning]=useState(true)
     const [waring2,setwarning2]=useState(true)
     const [data,setdata]=useState({})
+    const navigate=useNavigate()
 
     let password_data=useRef({password:"",confirm_pass:""})
 
@@ -21,7 +25,9 @@ function Signup() {
 
     }
 
-
+    const notify = () => toast("Wow so easy!,lets login now",{autoClose: 4000, onClose: () => {
+        navigate("/login")
+      }});
 function password(e){
  
     const {value,name}=e.target
@@ -52,7 +58,17 @@ function confirm_pass(e){
 function submit(){
     if(waring ==true && waring2==true){
         console.log("ok")
-        axios.post("http://localhost:1212/userdata",data).then((e)=>{console.log(e)})
+        axios.post("http://localhost:1212/userdata",data).then((e)=>{
+ 
+
+
+          if(e.data.status=="400"){
+            notify()
+//navigate("/login")
+          }
+           
+
+        })
 
     }
     
@@ -62,10 +78,13 @@ console.log(data)
 
   return (
     <div className='signup_main' >
+      
+        <ToastContainer />
         <div className='signup_box' >
             <img src={plane} />
             <h2>HELLO , GET JOIN WITH US</h2>
             <div className='feild_box'>
+                
                
                 <input onChange={setalldata} name='First_name'   placeholder='First Name'/>
                 <input onChange={setalldata} name='Last_name' placeholder='Last Name'/>
