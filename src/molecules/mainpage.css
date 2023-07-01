@@ -1,5 +1,5 @@
 .main{
-    background: linear-gradient(323deg, #228fec, #00e99c); /*// // #1bedd8, #99f58b*/
+    background: linear-gradient(323deg, #228fec, #004997); /*// // #1bedd8, #99f58b*/
     background-color: #60FF48;
     width: 100%;
     height: 100%;
@@ -11,6 +11,10 @@
     justify-content: center;
     
 }
+ 
+.main :nth-child(3){
+    background-color: #13b0d5;
+}
 
 .main :nth-child(4){
     position: absolute;
@@ -19,6 +23,7 @@
     align-items: center;
     color: white;
 }
+
 
 .laptopman{
     width: 78%;
@@ -33,7 +38,7 @@
     height: 36px;
     border: 4px solid white;
     border-radius: 30px;
-    background-color: #04BD86;
+    background-color:#0c9cd0;
     font-family: cursive;
     font-weight: bold;
     font-size: 19px;
