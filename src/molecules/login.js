@@ -18,11 +18,11 @@ const {name,value}=e.target
     [name]:value
   })
 }
-
+  
 const navigate=useNavigate()
 
 function handel(){
-    axios.get(`http://localhost:1212/userdata/${infodata.Email}`).then((e)=>{
+    axios.get(`https://appnapg.onrender.com/userdata/${infodata.Email}`).then((e)=>{
       if(e.data.status==400){
         setwarning(true)
         localStorage.setItem("logindetails",JSON.stringify(e.data.data))

@@ -58,7 +58,7 @@ function confirm_pass(e){
 function submit(){
     if(waring ==true && waring2==true){
         console.log("ok")
-        axios.post("http://localhost:1212/userdata",data).then((e)=>{
+        axios.post("https://appnapg.onrender.com/userdata",data).then((e)=>{
  
 
 
