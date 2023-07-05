@@ -42,7 +42,7 @@ function signupredirect(){
   signInWithPopup(auth,provider).then((e)=>{
  
   //  setdata(e.user.email)
-  axios.get(`http://localhost:1212/userdata/${e.user.email}`).then((e)=>{
+  axios.get(`https://appnapg.onrender.com/userdata/${e.user.email}`).then((e)=>{
     if(e.data.status){
       localStorage.setItem("logindetails",JSON.stringify(e.data.data))
       navigate("/PGselect")
