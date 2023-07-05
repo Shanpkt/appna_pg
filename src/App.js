@@ -14,45 +14,25 @@ import { auth,provider } from './config';
 import {signInWithPopup} from "firebase/auth"
 import Login from './molecules/login';
 import Signup from './molecules/signup';
+import Profile from './molecules/profile';
 
 
 
 const opencage = require('opencage-api-client');
-function App() {
+function App() {    
 
-  const [data,setdata]=useState(0)
 
-  useEffect(() => {
-   
-  }, [])
-  
-    
-function handelclick(){
-  signInWithPopup(auth,provider).then((e)=>{
- 
-    setdata(e.user.email)
 
-  })
-  
-
-}
- 
   return (
      <div className="App">
-
      <Routes>
-   
       <Route path='/' element={<Mainpage/>} />
       <Route path='/login' element={<Login/>} />
       <Route path='/login/signup' element={ <Signup/>} />
       <Route path='/PGselect' element={<Selecepg/>} />
       <Route path='/PGdetail' element={<BigScreenimg/>} />
+      <Route path='/Profile' element={<Profile/>} />
     </Routes> 
-
-    
-
-   
-     
     </div>
   );
 }

@@ -2,11 +2,18 @@ import React from 'react'
 import "./menu.css"
 import { useEffect } from 'react'
 import close from "../images/close.png"
+import { useNavigate } from 'react-router-dom'
 
 function Menu({trriger,settrigger}) {
 
+  const navigate=useNavigate()
     function handle_close(){
         trriger==false?settrigger(true):settrigger(false)
+    }
+
+
+    function profile(){
+       navigate("/Profile")
     }
 
   return (
@@ -16,7 +23,7 @@ function Menu({trriger,settrigger}) {
 
          <div className='menu_list'>
             <h3>Home</h3>
-            <h3>Profile</h3>
+            <h3 onClick={profile} >Profile</h3>
             <h3>Refferals</h3>
             <h3>My PG</h3>
 
