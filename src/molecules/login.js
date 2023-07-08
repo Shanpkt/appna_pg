@@ -48,6 +48,7 @@ function signupredirect(){
       localStorage.setItem("logindetails",JSON.stringify(e.data.data))
       navigate("/PGselect")
     }
+ //   console.log(e)
   })
 
   })

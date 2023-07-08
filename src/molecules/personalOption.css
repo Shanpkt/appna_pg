@@ -1,0 +1,24 @@
+.option_slide{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+
+}
+
+.circle_icon{
+    width: 67PX;
+    height: 67PX;
+    border-radius: 50px;
+    background-color: red;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circle_icon img{
+    width: 60%;
+}
