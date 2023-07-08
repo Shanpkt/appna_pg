@@ -1,12 +1,20 @@
 
 
 
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import "./profile.css"
 import back from "../images/back.png"
 import ProfileHeader from '../components/profileHeader'
 
 function Profile() {
+const [data,setdata]=useState()
+
+useEffect(() => {
+  
+  const a=window.innerWidth
+ setdata(a)
+}, [])
+
   return (
     <div className='profile_page' >
 
@@ -16,7 +24,8 @@ function Profile() {
         <h3>My Profile</h3>
         
         </div>   */}
-        <ProfileHeader/> 
+        {/* <ProfileHeader/>  */}
+        <h1>{data}</h1>
         
     </div>
   )
