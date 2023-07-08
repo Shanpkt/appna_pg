@@ -1,9 +1,11 @@
 .profile_header{
 
     
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 60px;
     display: flex;
+    margin-left: 29px;
+    margin-top: 20px;
     
 
 
