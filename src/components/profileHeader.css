@@ -24,7 +24,7 @@
 }
 
 
-@media (min-width: 200px) and (max-width: 675px) {
+@media (min-width: 355px) and (max-width: 385px) {
     .profile_header :nth-child(2) {
    
         margin-left: 20px;
