@@ -14,7 +14,7 @@ const [data,setdata]=useState()
 
 useEffect(() => {
   
-  const a=window.innerWidth
+  const a=window.innerHeight
  setdata(a)
 }, [])
 
