@@ -14,7 +14,7 @@
    
     margin-left: 20px;
     font-family: cursive;
-    @media screen and (min-width: 255px) and (max-width: 265px) {
+    @media screen and (min-width: 355px) and (max-width: 375px) {
        color: red;
       }
 }
