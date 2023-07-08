@@ -23,14 +23,14 @@ const navigate=useNavigate()
 
 function handel(){
     axios.get(`https://appnapg.onrender.com/userdata/${infodata.Email}`).then((e)=>{
-      // if(e.data.status==400){
-      //   setwarning(true)
-      //   localStorage.setItem("logindetails",JSON.stringify(e.data.data))
-      //   console.log(e.data)
-      //   navigate("/PGselect")
-      // }else{
-      //   setwarning(false)
-      // }
+      if(e.data.status==400){
+        setwarning(true)
+        localStorage.setItem("logindetails",JSON.stringify(e.data.data))
+        console.log(e.data)
+        navigate("/PGselect")
+      }else{
+        setwarning(false)
+      }
       console.log(e)
     })
 }
@@ -44,7 +44,7 @@ function signupredirect(){
  
   //  setdata(e.user.email)
   axios.get(`https://appnapg.onrender.com/userdata/${e.user.email}`).then((e)=>{
-    if(e.data.status){
+    if(e.data.status==400){
       localStorage.setItem("logindetails",JSON.stringify(e.data.data))
       navigate("/PGselect")
     }
