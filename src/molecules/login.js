@@ -23,14 +23,15 @@ const navigate=useNavigate()
 
 function handel(){
     axios.get(`https://appnapg.onrender.com/userdata/${infodata.Email}`).then((e)=>{
-      if(e.data.status==400){
-        setwarning(true)
-        localStorage.setItem("logindetails",JSON.stringify(e.data.data))
-        console.log(e.data)
-        navigate("/PGselect")
-      }else{
-        setwarning(false)
-      }
+      // if(e.data.status==400){
+      //   setwarning(true)
+      //   localStorage.setItem("logindetails",JSON.stringify(e.data.data))
+      //   console.log(e.data)
+      //   navigate("/PGselect")
+      // }else{
+      //   setwarning(false)
+      // }
+      console.log(e)
     })
 }
 
