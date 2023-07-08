@@ -19,6 +19,28 @@
 }
 
 
+@media (min-width: 385px) and (max-width: 398px) {
+    .profile_header{
+        /* border: 2px solid red; */
+        height: 60px;
+        display: flex;
+        margin-left: 29px;
+        margin-top: 20px;
+    }
+    .profile_header :nth-child(2) {
+   
+        margin-left: 20px;
+        font-family: cursive;
+        color: red;
+       
+    }
+    .profile_header :nth-child(3) {
+        height: 50%;
+        margin-left: 80px;
+    }
+   }
+
+
 @media (min-width: 355px) and (max-width: 385px) {
     .profile_header{
         /* border: 2px solid red; */
