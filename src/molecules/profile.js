@@ -24,7 +24,7 @@ useEffect(() => {
         <h3>My Profile</h3>
         
         </div>   */}
-        {/* <ProfileHeader/>  */}
+        <ProfileHeader/> 
         <h1>{data}</h1>
         
     </div>
