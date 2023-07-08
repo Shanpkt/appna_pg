@@ -27,8 +27,9 @@
 
 @media (min-width: 359px) and (max-width: 385px) {
 
-    .signup_box >img{
-        width: 35%;
+    .doodle {
+        width: 65%;
+       
     } 
 }
 

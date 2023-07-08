@@ -81,7 +81,7 @@ console.log(data)
       
         <ToastContainer />
         <div className='signup_box' >
-            <img src={plane} />
+            <img   src={plane} />
             <h2>HELLO , GET JOIN WITH US</h2>
             <div className='feild_box'>
                 
