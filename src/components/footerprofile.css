@@ -1,0 +1,32 @@
+.footer_button{
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_button button{
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+
+}
+
+
+.footer_button :nth-child(1){
+    background-color: black;
+    color: white;
+
+}
+
+.footer_button :nth-child(2){
+    background-color: rgb(255, 255, 255);
+    color: rgb(254, 38, 38);
+    border: 2px solid red;
+    font-family: system-ui;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    
+}
