@@ -15,6 +15,7 @@ import {signInWithPopup} from "firebase/auth"
 import Login from './molecules/login';
 import Signup from './molecules/signup';
 import Profile from './molecules/profile';
+import ProfileHeader from './components/profileHeader';
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Route path='/PGdetail' element={<BigScreenimg/>} />
       <Route path='/Profile' element={<Profile/>} />
     </Routes> 
+   
     </div>
   );
 }
