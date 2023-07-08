@@ -17,6 +17,8 @@
 .footer_button :nth-child(1){
     background-color: black;
     color: white;
+    font-family: revert;
+    font-weight: lighter;
 
 }
 
