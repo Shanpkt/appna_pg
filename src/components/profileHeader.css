@@ -12,11 +12,12 @@
 }
 .profile_header :nth-child(2) {
    
-    margin-left: 10px;
+    margin-left: 20px;
+    font-family: cursive;
 }
 
 
 .profile_header :nth-child(3) {
     height: 50%;
-    margin-left: 10px;
+    margin-left: 20px;
 }
