@@ -1,0 +1,16 @@
+.option_header{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+}
+
+
+.option_header button{
+
+    width: 122px;
+    height: 32px;
+    border: none;
+    background: black;
+    border-radius: 18px;
+    color: white;
+    margin: 0 10px 0 10px;
+}

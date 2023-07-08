@@ -5,6 +5,7 @@ import React, { useState,useEffect } from 'react'
 import "./profile.css"
 import back from "../images/back.png"
 import ProfileHeader from '../components/profileHeader'
+import OptionPlaner from '../components/optionPlaner'
 
 function Profile() {
 const [data,setdata]=useState()
@@ -25,6 +26,7 @@ useEffect(() => {
         
         </div>   */}
         <ProfileHeader/> 
+        <OptionPlaner/>
         <h1>{data}</h1>
         
     </div>
