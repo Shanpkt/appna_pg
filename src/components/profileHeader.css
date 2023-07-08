@@ -4,12 +4,17 @@
     border: 2px solid red;
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    
 
 
+}
+.profile_header :nth-child(2) {
+   
+    margin-left: 10px;
 }
 
 
 .profile_header :nth-child(3) {
     height: 50%;
+    margin-left: 10px;
 }
