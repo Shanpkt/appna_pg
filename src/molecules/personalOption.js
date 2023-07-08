@@ -12,17 +12,17 @@ function PersonalOption() {
 
         </div>
         <div className='option_slide' >
-        <div className='circle_icon'>
+        <div className='circle_icon1'>
         <img src={bulding} />
         </div>
-        <h3>find roomate</h3>
+        <h3>Find roomate</h3>
 
         </div>
         <div className='option_slide' >
-        <div className='circle_icon'>
+        <div className='circle_icon2'>
         <img src={bulding} />
         </div>
-        <h3>saved pg</h3>
+        <h3>Saved pg</h3>
 
         </div>
 
