@@ -10,12 +10,12 @@ function Profile() {
   return (
     <div className='profile_page' >
 
-     <div className='profile_header' >
+     {/* <div className='profile_header' >
 
         <img src={back}/>
         <h3>My Profile</h3>
         
-        </div>  
+        </div>   */}
         <ProfileHeader/> 
         
     </div>
