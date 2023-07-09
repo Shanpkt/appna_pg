@@ -30,7 +30,6 @@ useEffect(() => {
         <ProfileHeader/> 
         <OptionPlaner/>
         <PersonalOption/>
-        <h1>{data}</h1>
         <Footerprofile/>
         
     </div>

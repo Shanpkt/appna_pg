@@ -3,7 +3,7 @@ import "./personalOption.css"
 import bulding from "../images/icons8-house-64.png"
 function PersonalOption() {
   return (
-    <div>
+    <div className='personal_option_adjust' >
         <div className='option_slide' >
         <div className='circle_icon'>
         <img src={bulding} />

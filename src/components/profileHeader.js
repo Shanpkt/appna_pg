@@ -7,8 +7,10 @@ function ProfileHeader() {
   return (
     <div className='profile_header' >
         <img src={avatar} />
+        <div className='side_box'>
          <h2>Hi ' Shantanu</h2>
-         <img src={edit} />
+        <button>Edit profile</button>
+         </div>
     </div>
   )
 }

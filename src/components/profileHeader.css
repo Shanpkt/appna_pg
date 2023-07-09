@@ -4,13 +4,43 @@
     /* display: flex; */
     margin-left: 29px;
     margin-top: 20px;
+    margin-left: 71px;
+
 }
 .profile_header :nth-child(2) {
-   
-    margin-left: 20px;
+    display: flex;
     font-family: cursive;
+    flex-direction: column;
+    margin-left: 36px;
+
    
 }
+
+.profile_header :nth-child(2) h2 {
+   
+    font-size: 19px;
+    color: black;
+   
+}
+
+.side_box button{
+ 
+    
+    border: none;
+    background-color: green;
+    color: white;
+    width: 120px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 16px;
+
+
+}
+
 
 
 .profile_header :nth-child(3) {
@@ -23,15 +53,15 @@
     .profile_header{
         /* border: 2px solid red; */
         height: 60px;
-        display: flex;
-        margin-left: 29px;
+        /* display: flex; */
+        margin-left: 63px;
         margin-top: 20px;
     }
     .profile_header :nth-child(2) {
    
-        margin-left: 20px;
+      
         font-family: cursive;
-        color: red;
+        
        
     }
     .profile_header :nth-child(3) {
@@ -45,13 +75,12 @@
     .profile_header{
         /* border: 2px solid red; */
         height: 60px;
-        display: flex;
+        /* display: flex; */
         margin-left: 29px;
         margin-top: 20px;
     }
     .profile_header :nth-child(2) {
-   
-        margin-left: 20px;
+    
         font-family: cursive;
         color: red;
        
