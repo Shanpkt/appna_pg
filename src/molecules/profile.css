@@ -1,9 +1,11 @@
 .profile_page{
-    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+  
 }
 
 
-.profile_header{
+/* .profile_header{
     display: flex;
     align-items: center;
     height: 25px;
@@ -11,4 +13,4 @@
 
 .profile_header >img{
     height: 100%;
-}
+} */
