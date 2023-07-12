@@ -42,14 +42,16 @@ function signupredirect(){
   function handelclick(){
   signInWithPopup(auth,provider).then((e)=>{
   console.log(e)
-  //  setdata(e.user.email)
-//   axios.get(`https://appnapg.onrender.com/userdata/${e.user.email}`).then((e)=>{
-//     if(e.data.status==400){
-//       localStorage.setItem("logindetails",JSON.stringify(e.data.data))
-//       navigate("/PGselect")
-//     }
-//  //   console.log(e)
-//   })
+   setdata(e.user.email)
+  axios.get(`https://appnapg.onrender.com/userdata/${e.user.email}`).then((e)=>{
+    if(e.data.status==400){
+     const imgdata= e.user.photoURL
+         localStorage.setItem("imagedata",JSON.stringify(imgdata))
+      localStorage.setItem("logindetails",JSON.stringify(e.data.data))
+      navigate("/PGselect")
+    }
+ //   console.log(e)
+  })
 
   })
   

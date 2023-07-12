@@ -15,9 +15,10 @@ function Profile() {
 const [data,setdata]=useState()
 
 useEffect(() => {
-  
-  const a=window.innerHeight
- setdata(a)
+ 
+  const image=JSON.parse(localStorage.getItem("imagedata"))
+  setdata(data)
+
 }, [])
 
   return (
@@ -33,7 +34,7 @@ useEffect(() => {
         <OptionPlaner/>
         <PersonalOption/>
         <Footerprofile/> */}
-         <Profiletop/>
+         <Profiletop imagedata={data} />
          <Profilebottom/>
         
     </div>

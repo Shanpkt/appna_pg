@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./profiletop.css"
 import { useEffect } from 'react'
 
-function Profiletop() {
+function Profiletop({imagedata}) {
 
     const [data,setdata]=useState([])
 
@@ -20,7 +20,7 @@ function Profiletop() {
       <div className='second_box_strip' >
 
         <div className='profile_circle'>
-          
+          <img src={imagedata} />
 
         </div>
         <h4>Hi' {data.First_name}</h4>
