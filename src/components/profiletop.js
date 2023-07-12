@@ -13,7 +13,7 @@ function Profiletop({imagedata}) {
     setdata(mydata)
   }, []);
   console.log(data)
-
+ console.log(imagedata)
   return (
     <div className='main_topBox' >
 

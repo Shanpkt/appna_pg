@@ -17,7 +17,7 @@ const [data,setdata]=useState()
 useEffect(() => {
  
   const image=JSON.parse(localStorage.getItem("imagedata"))
-  setdata(data)
+  setdata(image)
 
 }, [])
 
