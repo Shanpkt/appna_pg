@@ -11,7 +11,8 @@ function Profilebottom() {
         <h4><img src={setting} />Setting</h4>
         <h4><img src={bulding} />My PG</h4>
         <h4><img src={patner} />Find Roomate</h4>
-
+        
+        <button>Log Out</button>
     </div>
   )
 }
