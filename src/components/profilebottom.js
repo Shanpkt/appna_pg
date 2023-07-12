@@ -23,7 +23,7 @@ function Profilebottom() {
         localStorage.removeItem("logindetails");
         localStorage.removeItem("imagedata");
           
-          navigate(-1)
+          navigate("/")
     } 
 
 
