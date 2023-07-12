@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./profilebottom.css"
 import setting from "../images/icons8-setting-100.png"
 import bulding from "../images/icons8-bulding-64.png"
@@ -10,11 +10,20 @@ function Profilebottom() {
 
     const navigate=useNavigate()
 
+    useEffect(() => {
+
+      const details=  localStorage.getItem("logindetails")
+      
+         details==null? navigate("/"):console.log("")
+        
+       
+    }, [])
+
     function logout(){
         localStorage.removeItem("logindetails");
         localStorage.removeItem("imagedata");
           
-          navigate("/")
+          navigate(-1)
     } 
 
 
