@@ -26,13 +26,28 @@
     margin-right: 10px;
 }
 
-.user_option :nth-child(4){
+.button_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button_box button{
     width: 40%;
-    height: 31px;
+    height: 42px;
     border: none;
     background-color: #0096ff;
     color: white;
     font-size: 16px;
     font-weight: 700;
     border-radius: 3px;
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logout_button img{
+    height: 80%;
 }
