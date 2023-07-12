@@ -19,12 +19,20 @@ function Profiletop() {
 
       <div className='second_box_strip' >
 
-        <div>
-
+        <div className='profile_circle'>
+          
 
         </div>
         <h4>Hi' {data.First_name}</h4>
-        <div>
+
+        <div className='personalbox' >
+            <div className='option_first' >
+                My Refferals
+            </div>
+            <div className='divider' ></div>
+            <div className='option_second'>
+               Plan Weekends
+            </div>
 
         </div>
 

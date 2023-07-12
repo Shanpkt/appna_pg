@@ -7,7 +7,7 @@
 }
 
 
-.main_topBox :nth-child(1){
+.second_box_strip{
     width: 70%;
     height: 100%;
     position: relative;
@@ -18,7 +18,7 @@
 
 }
 
-.second_box_strip :nth-child(3){
+.personalbox{
     width: 100%;
     height: 50px;
     background-color: rgb(255, 255, 255);
@@ -26,20 +26,46 @@
     bottom: -20px;
    box-shadow:  0px 0px 3px gray;
    border-radius: 2px;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+
 
 }
 
-.second_box_strip :nth-child(1){
+.profile_circle{
     width: 100px;
     height: 100px;
     background-color: white;
     border-radius: 50px;
     margin-top: 20px;
-    
+ 
+ 
+}
+
+ .second_box_strip :nth-child(2){
+color: white;
+text-transform: uppercase;
+}
+
+/*.personalbox{
+    display: flex;
+    background-color: red;
+
+} */
+
+
+.option_first ,.option_second{
+
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.second_box_strip :nth-child(2){
-color: white;
-text-transform: uppercase;
+.divider{
+    border-left: 1px solid gray;
+    height: 60%;
 }
