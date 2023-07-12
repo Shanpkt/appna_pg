@@ -71,7 +71,7 @@ console.log(infodata)
             <div className='login_details_input'>
             <h5 className={`pass_warning ${waring?"password_ok":""}`} >Sorry your ID and Password is incorrect</h5>
                 <input onChange={login} name='Email' placeholder='Email' />
-                <input onChange={login} name='Password' placeholder='Password' />
+                <input type='password' onChange={login} name='Password' placeholder='Password' />
                 <button onClick={handel} className='login_button' >Login</button>
             </div>
             <h6>dont have Account?<span onClick={signupredirect} > Signup</span></h6>
