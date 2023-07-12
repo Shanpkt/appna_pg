@@ -39,8 +39,16 @@
     background-color: white;
     border-radius: 50px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
  
  
+}
+
+.profile_circle :nth-child(1){
+    height: 80%;
+    border-radius: 50px;
 }
 
  .second_box_strip :nth-child(2){
