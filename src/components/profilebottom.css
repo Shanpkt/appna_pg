@@ -1,0 +1,25 @@
+.user_option{
+
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 66px
+}
+
+
+.user_option h4{
+    height: 20px;
+    DISPLAY: flex;
+    /* JUSTIFY-CONTENT: center; */
+    ALIGN-ITEMS: center;
+    padding-left: 40%;
+    color: #7b7b7b;
+  
+    font-size: 18px;
+    margin-bottom: 35px;
+
+}
+
+
+.user_option h4 :nth-child(1){
+    height: 100%;
+}

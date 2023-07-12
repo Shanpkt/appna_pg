@@ -9,6 +9,7 @@ import OptionPlaner from '../components/optionPlaner'
 import PersonalOption from './personalOption'
 import Footerprofile from '../components/footerprofile'
 import Profiletop from '../components/profiletop'
+import Profilebottom from '../components/profilebottom'
 
 function Profile() {
 const [data,setdata]=useState()
@@ -33,6 +34,7 @@ useEffect(() => {
         <PersonalOption/>
         <Footerprofile/> */}
          <Profiletop/>
+         <Profilebottom/>
         
     </div>
   )
